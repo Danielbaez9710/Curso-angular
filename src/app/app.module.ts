@@ -3,12 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { heroesModule } from './heroes/heroes.module';
+import { ContadorModule } from './contador/contador.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    heroesModule,
+    ContadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
